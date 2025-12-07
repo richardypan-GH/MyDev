@@ -45,15 +45,16 @@ def performance_screen(tickers, date1, date2, date3, drop_pct, rise_pct):
 
 # ------------------------------
 # Example use
-# ------------------------------
-tickers = ["AAPL", "MSFT", "NVDA", "TSLA", "AMZN"]
+# ------------ ------------------
+# tickers = ["AAPL", "MSFT", "NVDA", "TSLA", "AMZN"]
+tickers = ["KMB",	"NOK",	"UAL",	"CCL",	"XYL",	"NTRA",	"OTIS",	"CUK",	"SOFI",	"SNDK",	"QSR",	"MDB",	"PCG",	"ACGL",	"BBD",	"BBDO",	"KGC",	"TEVA",	"SLF",	"ODFL",	"KVUE",	"MT",	"LYV",	"EXPE",	"CHT",	"ASX",	"FMX",	"RJF",	"KB",	"ERIC",	"CRDO",	"WDS",	"IR",	"TER",	"NRG",	"HUM",	"VRSK",	"HPE",	"WTW",	"IX",	"LEN",	"LEN.B",	"FOXA",	"WIT",	"FITB",	"MTB",	"CHTR",	"VIK",	"VOD",	"LPLA",	"VICI",	"ROL",	"TME",	"EXE",	"DG",	"NTR",	"SYF",	"K",	"MTD",	"CSGP",	"KHC",	"IBKR",	"EXR",	"FOX",	"TSCO",	"COHR",	"CIEN",	"ADM",	"BE",	"EME",	"ATO",	"FSLR",	"ASTS",	"DTE",	"ALAB",	"BR",	"CQP",	"AEE",	"BRO",	"ULTA",	"BIIB",	"HBAN",	"CBOE",	"AXIA",	"SHG",	"DOV",	"RKLB",	"ZM",	"FE",	"IOT",	"EFX",	"STE",	"MKL",	"PHG",	"FTS",	"DXCM",	"TW",	"VLTO",	"WRB",	"OWL"}
 
-date1 = "2024-01-01"
-date2 = "2024-06-01"
-date3 = "2024-12-01"
+date1 = "2024-04-14"
+date2 = "2024-11-05
+date3 = "2024-12-05"
 
-drop_threshold = 10   # Must fall at least 10%
-rise_threshold = 20   # Must rise at least 20%
+drop_threshold = 50   # Must fall at least 10%
+rise_threshold = 5   # Must rise at least 20%
 
 df = performance_screen(tickers, date1, date2, date3, drop_threshold, rise_threshold)
 print(df)
