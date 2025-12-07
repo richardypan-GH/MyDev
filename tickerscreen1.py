@@ -59,3 +59,4 @@ rise_threshold = 5   # Must rise at least 20%
 df = performance_screen(tickers, date1, date2, date3, drop_threshold, rise_threshold)
 print(df)
 
+print("Second Hello from tickerscreen1.py!")
